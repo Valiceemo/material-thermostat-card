@@ -1,44 +1,64 @@
 # Material Thermostat Card
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Valiceemo/material-thermostat-card/main/images/light-mode.png" width="300" alt="Light theme">
+  <img src="https://raw.githubusercontent.com/Valiceemo/material-thermostat-card/main/images/dark-mode.png" width="300" alt="Dark theme">
+</p>
+
 A Material-style dial thermostat card for Home Assistant, inspired by the Google Home app.
 
-- Circular dial: drag the ring, or use the − / + buttons
-- Target temperature and current temperature markers
-- Heat / cool / auto / dry / fan mode selector, plus preset, fan and swing selectors when the entity supports them
-- Dual setpoint (low / high) for `heat_cool` entities
-- Indoor, outdoor and humidity info tile
-- Power button and more-info dialog
-- Colours follow the HVAC mode and adapt to light and dark themes
-- Visual editor support, no build step, no dependencies
+[![HACS Custom](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://hacs.xyz)
+[![Release](https://img.shields.io/github/v/release/Valiceemo/material-thermostat-card)](https://github.com/Valiceemo/material-thermostat-card/releases)
+[![License](https://img.shields.io/github/license/Valiceemo/material-thermostat-card)](LICENSE)
 
-<table>
-  <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/valiceemo/material-thermostat-card/main/images/light-mode.png" width="300"><br>Light</td>
-    <td align="center"><img src="https://raw.githubusercontent.com/valiceemo/material-thermostat-card/main/images/dark-mode.png" width="300"><br>Dark</td>
-  </tr>
-</table>
+## Features
 
-## Installation (HACS)
+- **Dial control:** drag the ring or use the − / + buttons
+- **At a glance:** target and current temperature markers, plus heating / cooling status
+- **Modes:** heat, cool, auto, dry and fan selector, with preset, fan and swing selectors when the entity supports them
+- **Dual setpoint:** low / high handles for `heat_cool` entities
+- **Info tile:** indoor, outdoor and humidity, optionally from separate sensors
+- **Themes:** colours follow the HVAC mode and adapt to light and dark themes
+- **Easy setup:** visual editor, no build step, no dependencies
+
+## Installation
+
+### HACS (custom repository)
+
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Valiceemo&repository=material-thermostat-card&category=plugin)
+
+Or add it by hand:
 
 1. HACS → ⋮ → **Custom repositories**
-2. Add `https://github.com/Valiceemo/material-thermostat-card`, category **Dashboard** (called *Plugin* in older versions)
-3. Install **Material Thermostat Card** and reload the browser
+2. Add `https://github.com/Valiceemo/material-thermostat-card` with category **Dashboard**
+3. Find **Material Thermostat Card** in HACS, click **Download**, then reload the browser
 
 ### Manual
 
-Copy `material-thermostat-card.js` to `/config/www/` and add a dashboard resource:
-`/local/material-thermostat-card.js` (type: JavaScript module).
+1. Copy `material-thermostat-card.js` to `/config/www/`
+2. Add a dashboard resource: `/local/material-thermostat-card.js` (type: **JavaScript module**)
 
 ## Usage
 
+Minimal:
+
 ```yaml
 type: custom:material-thermostat-card
-entity: climate.hive_thermostat
-name: Living Room 
+entity: climate.living_room
+```
+
+With all options:
+
+```yaml
+type: custom:material-thermostat-card
+entity: climate.living_room
+name: Living Room
 outdoor_entity: sensor.outdoor_temperature
-indoor_temperature_entity: sensor.hive_current_temperature
+indoor_temperature_entity: sensor.living_room_temperature
 humidity_entity: sensor.living_room_humidity
 ```
+
+## Options
 
 | Option | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -51,3 +71,16 @@ humidity_entity: sensor.living_room_humidity
 | `hide_action` | boolean | `false` | Hide the heating / cooling / idle status under the number |
 | `hide_humidity` | boolean | `false` | Hide humidity in the info tile |
 | `hide_presets` | boolean | `false` | Hide the preset, fan and swing selectors |
+
+## Notes
+
+- Modes, status and preset names use Home Assistant's own translations. The info-tile labels are currently English only.
+- The card only shows what your entity supports. For example, humidity needs either a `humidity_entity` or a `current_humidity` attribute.
+
+## Issues and feedback
+
+Found a bug or want a feature? Please [open an issue](https://github.com/Valiceemo/material-thermostat-card/issues).
+
+## License
+
+MIT
