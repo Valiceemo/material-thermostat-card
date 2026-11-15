@@ -26,11 +26,11 @@ Copy `material-thermostat-card.js` to `/config/www/` and add a dashboard resourc
 
 ```yaml
 type: custom:material-thermostat-card
-entity: climate.kids_room_radiator
-name: Kids Room Radiator
+entity: climate.hive_thermostat
+name: Living Room 
 outdoor_entity: sensor.outdoor_temperature
-indoor_temperature_entity: sensor.kids_room_temperature
-humidity_entity: sensor.kids_room_humidity
+indoor_temperature_entity: sensor.hive_current_temperature
+humidity_entity: sensor.living_room_humidity
 ```
 
 | Option | Type | Default | Description |
