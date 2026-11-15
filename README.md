@@ -11,7 +11,12 @@ A Material-style dial thermostat card for Home Assistant, inspired by the Google
 - Colours follow the HVAC mode and adapt to light and dark themes
 - Visual editor support, no build step, no dependencies
 
-![Material Thermostat Card](https://raw.githubusercontent.com/valiceemo/material-thermostat-card/main/light-mode.png)
+<table>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/valiceemo/material-thermostat-card/main/images/light-mode.png" width="300"><br>Light</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/valiceemo/material-thermostat-card/main/images/dark-mode.png" width="300"><br>Dark</td>
+  </tr>
+</table>
 
 ## Installation (HACS)
 
