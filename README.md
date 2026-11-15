@@ -1,5 +1,13 @@
 # Material Thermostat Card
 
+[![Repository](https://img.shields.io/badge/Repository-material--thermostat--card-181717?style=for-the-badge&logo=github)](https://github.com/Valiceemo/material-thermostat-card)
+![Stars](https://img.shields.io/github/stars/Valiceemo/material-thermostat-card?style=for-the-badge&logo=github)
+![Forks](https://img.shields.io/github/forks/Valiceemo/material-thermostat-card?style=for-the-badge&logo=github)
+![Downloads](https://img.shields.io/github/downloads/Valiceemo/material-thermostat-card/total?style=for-the-badge&logo=github)
+![License](https://img.shields.io/github/license/Valiceemo/material-thermostat-card?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/Valiceemo/material-thermostat-card?style=for-the-badge&logo=github)
+![Top Language](https://img.shields.io/github/languages/top/Valiceemo/material-thermostat-card?style=for-the-badge)
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Valiceemo/material-thermostat-card/main/images/light-mode.png" width="300" alt="Light theme">
   <img src="https://raw.githubusercontent.com/Valiceemo/material-thermostat-card/main/images/dark-mode.png" width="300" alt="Dark theme">
