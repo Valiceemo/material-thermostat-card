@@ -10,6 +10,7 @@ A Material-style dial thermostat card for Home Assistant, inspired by the Google
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://hacs.xyz)
 [![Release](https://img.shields.io/github/v/release/Valiceemo/material-thermostat-card)](https://github.com/Valiceemo/material-thermostat-card/releases)
 [![License](https://img.shields.io/github/license/Valiceemo/material-thermostat-card)](LICENSE)
+![Downloads](https://img.shields.io/github/downloads/Valiceemo/material-thermostat-card/total)
 
 ## Features
 
