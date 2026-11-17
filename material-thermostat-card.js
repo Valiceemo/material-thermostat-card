@@ -3,7 +3,7 @@
  * A Material-style dial thermostat card for Home Assistant, inspired by the
  * Google Home app. Vanilla web component: no build step, no dependencies.
  */
-const CARD_VERSION = "1.2.0";
+const CARD_VERSION = "1.2.1";
 
 // Dial geometry (SVG viewBox 400x400). Angles are degrees clockwise from top.
 const START = 207; // ring start (bottom-left)
