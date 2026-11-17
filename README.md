@@ -1,17 +1,18 @@
-# Material Thermostat Card
+# Material Thermostat Card by [@Valiceemo](https://github.com/Valiceemo/material-thermostat-card)
 
-[![Repository](https://img.shields.io/badge/Repository-material--thermostat--card-181717?style=for-the-badge&logo=github)](https://github.com/Valiceemo/material-thermostat-card)
-![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Projects-18BCF2?style=for-the-badge&logo=homeassistant)
-![Made With](https://img.shields.io/badge/Made%20With-Love-red?style=for-the-badge)
+[![Stable][releases-shield]][releases] [![HACS Badge][hacs-badge]][hacs-link] [![License][license-shield]](https://github.com/Valiceemo/material-thermostat-card/blob/main/LICENSE) [![Commits][commits-shield]][commits] [![Maintenance][maintenance-shield]][maintenance] [![Community Forum][forum-shield]][forum]
 
-![Stars](https://img.shields.io/github/stars/Valiceemo/material-thermostat-card?style=for-the-badge&logo=github)
-![Forks](https://img.shields.io/github/forks/Valiceemo/material-thermostat-card?style=for-the-badge&logo=github)
-![Downloads](https://img.shields.io/github/downloads/Valiceemo/material-thermostat-card/total?style=for-the-badge&logo=github)
-![License](https://img.shields.io/github/license/Valiceemo/material-thermostat-card?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/Valiceemo/material-thermostat-card?style=for-the-badge&logo=github)
-![Top Language](https://img.shields.io/github/languages/top/Valiceemo/material-thermostat-card?style=for-the-badge)
-
-
+[releases-shield]: https://img.shields.io/github/v/release/Valiceemo/material-thermostat-card?style=flat-square
+[releases]: https://github.com/Valiceemo/material-thermostat-card/releases/latest
+[hacs-badge]: https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=flat-square
+[hacs-link]: https://github.com/hacs/integration
+[license-shield]: https://img.shields.io/github/license/Valiceemo/material-thermostat-card?style=flat-square
+[commits-shield]: https://img.shields.io/github/last-commit/Valiceemo/material-thermostat-card?style=flat-square
+[commits]: https://github.com/Valiceemo/material-thermostat-card/commits/main
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026?style=flat-square
+[maintenance]: https://github.com/Valiceemo/material-thermostat-card/graphs/commit-activity
+[forum]: https://community.home-assistant.io/t/material-expressive-climate-card-a-google-home-style-dial-thermostat-card/1034776
+[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=flat-square
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Valiceemo/material-thermostat-card/main/images/light-mode.png" width="300" alt="Light theme">
@@ -19,11 +20,6 @@
 </p>
 
 A Material-style dial thermostat card for Home Assistant, inspired by the Google Home app.
-
-[![HACS Custom](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://hacs.xyz)
-[![Release](https://img.shields.io/github/v/release/Valiceemo/material-thermostat-card)](https://github.com/Valiceemo/material-thermostat-card/releases)
-[![License](https://img.shields.io/github/license/Valiceemo/material-thermostat-card)](LICENSE)
-![Downloads](https://img.shields.io/github/downloads/Valiceemo/material-thermostat-card/total)
 
 ## Features
 
@@ -37,15 +33,14 @@ A Material-style dial thermostat card for Home Assistant, inspired by the Google
 
 ## Installation
 
-### HACS (custom repository)
+### HACS (recommended)
+
+1. Open HACS and search for **Material Thermostat Card**
+2. Click **Download**, then reload the browser
 
 [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Valiceemo&repository=material-thermostat-card&category=plugin)
 
-Or add it by hand:
-
-1. HACS → ⋮ → **Custom repositories**
-2. Add `https://github.com/Valiceemo/material-thermostat-card` with category **Dashboard**
-3. Find **Material Thermostat Card** in HACS, click **Download**, then reload the browser
+If it doesn't appear in search, add it as a custom repository: HACS → ⋮ → **Custom repositories** → `https://github.com/Valiceemo/material-thermostat-card` → category **Dashboard**.
 
 ### Manual
 
@@ -94,6 +89,10 @@ humidity_entity: sensor.living_room_humidity
 ## Issues and feedback
 
 Found a bug or want a feature? Please [open an issue](https://github.com/Valiceemo/material-thermostat-card/issues).
+
+## Useful links
+
+[Home Assistant Community Forum Thread](https://community.home-assistant.io/t/material-expressive-climate-card-a-google-home-style-dial-thermostat-card/1034776)
 
 ## License
 
